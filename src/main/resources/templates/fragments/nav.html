@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation" data-th-fragment="nav">
+        <div class="navbar-header">
+            <a class="navbar-brand">Read every day </a>
+        </div>
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <form action="article" th:action="article">
+                    <input type="text" name="content"/>
+                    <button type="submit">search </button>
+                </form>
+
+            </div>
+        </form>
+        <ul class="nav navbar-nav">
+            <li><a href="#">administrator </a> </li>
+            <li><a href="#">user </a> </li>
+        </ul>
+    </nav>
+</body>
+</html>
